@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  moth:
+    build: .
+    command: /www/moth/bin/main -c /www/moth/conf/config.yaml
+    ports:
+      - "8081:80"
